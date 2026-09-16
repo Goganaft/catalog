@@ -3,220 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike Каталог товаров</title>
+    <title>Локальный каталог товаров</title>
     <style>
         body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f5f5f5; margin: 0; padding: 20px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
         .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); display: flex; flex-direction: column; position: relative; transition: transform 0.2s; }
         .card:hover { transform: translateY(-5px); }
-        .badge { position: absolute; top: 10px; left: 10px; background: #111; color: white; padding: 4px 8px; font-size: 12px; font-weight: bold; border-radius: 4px; z-index: 10; }
+        .badge { position: absolute; top: 10px; left: 10px; background: #e53935; color: white; padding: 4px 8px; font-size: 12px; font-weight: bold; border-radius: 4px; z-index: 10; }
         .image-container { width: 100%; aspect-ratio: 1; background: #f6f6f6; display: flex; align-items: center; justify-content: center; }
         .image-container img { max-width: 100%; max-height: 100%; object-fit: contain; }
         .info { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; }
-        .title { font-size: 16px; font-weight: 600; margin: 0 0 5px 0; color: #111; text-decoration: none; }
+        .title { font-size: 15px; font-weight: 600; margin: 0 0 8px 0; color: #111; text-decoration: none; line-height: 1.3; }
         .title:hover { color: #000; text-decoration: underline; }
-        .subtitle { font-size: 14px; color: #707072; margin: 0 0 15px 0; }
-        .price-box { margin-top: auto; display: flex; align-items: baseline; gap: 10px; }
+        .subtitle { font-size: 13px; color: #707072; margin: 0 0 15px 0; }
+        .price-box { margin-top: auto; display: flex; align-items: baseline; gap: 10px; padding-top: 10px; }
         .current-price { font-size: 18px; font-weight: bold; color: #111; }
         .old-price { font-size: 14px; color: #707072; text-decoration: line-through; }
-        .note { font-size: 12px; color: #e53935; margin-top: 5px; font-weight: 500; }
+        .meta-line { font-size: 12px; color: #666; margin-top: 4px; }
+        .meta-line strong { color: #222; }
     </style>
 </head>
 <body>
     <div class="grid">
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c971ed2d-5b91-4c38-aae6-873d9c1c01c8/WMNS+JORDAN+HEIR+SERIES+2+WNBA.png" alt="Jordan Heir Series 2 "Oh Sheila"" loading="lazy">
+                <img src="images/prod_0.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/jordan-heir-series-2-oh-sheila-basketball-shoes-IQUADZMV/II0568-600" target="_blank" class="title">Jordan Heir Series 2 "Oh Sheila"</a>
-                <div class="subtitle">Basketball Shoes</div>
-                <div class="price-box">
-                    <span class="current-price">$91.97</span>
-                    <span class="old-price">$120</span>
-                </div>
+                <a href="https://www.uspashop.com/products/uspa-womens-gold-player-3-polo-peach-nectar?variant=51556768514364" target="_blank" class="title">Без названия</a>
                 
+                <div class="price-box">
+                    <span class="current-price">$28.50 USD</span>
+                    <span class="old-price">$38.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Gold Player 3 Polo Peach Nectar</div>
             </div>
         </div>
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/431b77de-eb6a-4933-9125-c686189b3a48/JORDAN+LUKA+5+EDGE.png" alt="Luka 5 "Slovenian Glow"" loading="lazy">
+                <img src="images/prod_1.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/luka-5-slovenian-glow-basketball-shoes-0diTWrV5/IM5182-002" target="_blank" class="title">Luka 5 "Slovenian Glow"</a>
-                <div class="subtitle">Basketball Shoes</div>
-                <div class="price-box">
-                    <span class="current-price">$101.97</span>
-                    <span class="old-price">$135</span>
-                </div>
+                <a href="https://www.uspashop.com/products/uspa-womens-stripe-relaxed-polo-dress-navy-iris?variant=51556738138428" target="_blank" class="title">Без названия</a>
                 
+                <div class="price-box">
+                    <span class="current-price">$48.75 USD</span>
+                    <span class="old-price">$65.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Stripe Relaxed Polo Dress Navy Iris</div>
             </div>
         </div>
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ee7f83c6-0d5f-4d12-9344-2782954ae7bb/WMNS+JORDAN+HEIR+SERIES+2.png" alt="Jordan Heir Series 2 "Desert Berry"" loading="lazy">
+                <img src="images/prod_2.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/jordan-heir-series-2-desert-berry-basketball-shoes-IQUADZMV/HV4417-104" target="_blank" class="title">Jordan Heir Series 2 "Desert Berry"</a>
-                <div class="subtitle">Basketball Shoes</div>
+                <a href="https://www.uspashop.com/products/uspa-womens-colour-block-stripe-ss-crew-neck-jumper-peach-nectar?variant=51556699963708" target="_blank" class="title">Без названия</a>
+                
                 <div class="price-box">
-                    <span class="current-price">$115</span>
-                    
+                    <span class="current-price">$48.75 USD</span>
+                    <span class="old-price">$65.00 USD</span>
                 </div>
-                <div class="note">See Price in Bag</div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Colour Block Stripe SS Crew Neck Jumper Peach Nectar</div>
             </div>
         </div>
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d6e99963-bb3a-4088-8f1e-0197bc72125d/JORDAN+TATUM+4+SE.png" alt="Tatum 4 SE" loading="lazy">
+                <img src="images/prod_3.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/tatum-4-se-basketball-shoes-2evfpgd9/II3805-300" target="_blank" class="title">Tatum 4 SE</a>
-                <div class="subtitle">Basketball Shoes</div>
-                <div class="price-box">
-                    <span class="current-price">$97.97</span>
-                    <span class="old-price">$130</span>
-                </div>
+                <a href="https://www.uspashop.com/products/uspa-womens-linen-pleated-short-navy?variant=49536199459132" target="_blank" class="title">Без названия</a>
                 
+                <div class="price-box">
+                    <span class="current-price">$39.00 USD</span>
+                    <span class="old-price">$60.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Linen Pleated Short Navy</div>
             </div>
         </div>
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/09a6d8dc-9bd4-477f-9ab8-e2e3cf20a035/WMNS+JORDAN+HEIR+SERIES+2.png" alt="Jordan Heir Series 2 "Seafoam"" loading="lazy">
+                <img src="images/prod_4.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/jordan-heir-series-2-seafoam-basketball-shoes-IQUADZMV/HV4417-103" target="_blank" class="title">Jordan Heir Series 2 "Seafoam"</a>
-                <div class="subtitle">Basketball Shoes</div>
-                <div class="price-box">
-                    <span class="current-price">$86.97</span>
-                    <span class="old-price">$115</span>
-                </div>
+                <a href="https://www.uspashop.com/products/uspa-womens-lurex-rib-knit-polo-pearl-grey-marl?variant=52323048390972" target="_blank" class="title">Без названия</a>
                 
+                <div class="price-box">
+                    <span class="current-price">$55.25 USD</span>
+                    <span class="old-price">$85.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Lurex Rib Knit Polo Pearl Grey Marl</div>
             </div>
         </div>
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c13d62f-b0ed-4407-b9a3-9db20032a873/JORDAN+LUKA+5+FAM.png" alt="Luka 5" loading="lazy">
+                <img src="images/prod_5.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/luka-5-basketball-shoes-qbPYX73D/IW9035-500" target="_blank" class="title">Luka 5</a>
-                <div class="subtitle">Basketball Shoes</div>
-                <div class="price-box">
-                    <span class="current-price">$101.97</span>
-                    <span class="old-price">$135</span>
-                </div>
+                <a href="https://www.uspashop.com/products/uspa-womens-colour-block-stripe-boatneck-tee-smoke-grey?variant=51556704747836" target="_blank" class="title">Без названия</a>
                 
+                <div class="price-box">
+                    <span class="current-price">$41.25 USD</span>
+                    <span class="old-price">$55.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Colour Block Stripe Boatneck Tee Smoke Grey</div>
             </div>
         </div>
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fcefc28b-a3ed-4c98-8911-878348d28d3f/WMNS+JORDAN+HEIR+SERIES+2+PM.png" alt="Jordan Heir Series 2 "Precious Medals"" loading="lazy">
+                <img src="images/prod_6.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/jordan-heir-series-2-precious-medals-basketball-shoes-IQUADZMV/IR3504-200" target="_blank" class="title">Jordan Heir Series 2 "Precious Medals"</a>
-                <div class="subtitle">Basketball Shoes</div>
-                <div class="price-box">
-                    <span class="current-price">$91.97</span>
-                    <span class="old-price">$120</span>
-                </div>
+                <a href="https://www.uspashop.com/products/uspa-womens-ls-open-knit-polo-smoke-grey?variant=51556709892412" target="_blank" class="title">Без названия</a>
                 
+                <div class="price-box">
+                    <span class="current-price">$42.25 USD</span>
+                    <span class="old-price">$65.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's LS Open Knit Polo Smoke Grey</div>
             </div>
         </div>
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8a5467a9-1a3f-4a92-9eca-d7f77217cb72/AIR+JORDAN+40.png" alt="Air Jordan 40 "Wolf Grey"" loading="lazy">
+                <img src="images/prod_7.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/air-jordan-40-wolf-grey-basketball-shoes-AEDokexu/HM9931-001" target="_blank" class="title">Air Jordan 40 "Wolf Grey"</a>
-                <div class="subtitle">Basketball Shoes</div>
-                <div class="price-box">
-                    <span class="current-price">$132.97</span>
-                    <span class="old-price">$205</span>
-                </div>
+                <a href="https://www.uspashop.com/products/uspa-womens-sash-player-3-polo-navy-iris?variant=51556757799228" target="_blank" class="title">Без названия</a>
                 
+                <div class="price-box">
+                    <span class="current-price">$35.75 USD</span>
+                    <span class="old-price">$55.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Sash Player 3 Polo Navy Iris</div>
             </div>
         </div>
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e94d8a08-bf79-4d0b-9ca5-a28aa6e572bb/JORDAN+LUKA+77.png" alt="Luka 77" loading="lazy">
+                <img src="images/prod_8.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/luka-77-basketball-shoes-RNbRTVc7/IF1610-500" target="_blank" class="title">Luka 77</a>
-                <div class="subtitle">Basketball Shoes</div>
-                <div class="price-box">
-                    <span class="current-price">$89.97</span>
-                    <span class="old-price">$105</span>
-                </div>
+                <a href="https://www.uspashop.com/products/uspa-womens-fine-cable-knit-cardigan-marshmallow?variant=52323043967292" target="_blank" class="title">Без названия</a>
                 
+                <div class="price-box">
+                    <span class="current-price">$55.25 USD</span>
+                    <span class="old-price">$85.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Fine Cable Knit Cardigan Marshmallow</div>
             </div>
         </div>
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/07b47be3-a57e-41ec-82fa-e20e9a81e3f0/JORDAN+LUKA+5+LIFE.png" alt="Luka 5 "Luka Lifestyle"" loading="lazy">
+                <img src="images/prod_9.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/luka-5-luka-lifestyle-basketball-shoes-or9bmdk1/IO5028-900" target="_blank" class="title">Luka 5 "Luka Lifestyle"</a>
-                <div class="subtitle">Basketball Shoes</div>
-                <div class="price-box">
-                    <span class="current-price">$101.97</span>
-                    <span class="old-price">$135</span>
-                </div>
+                <a href="https://www.uspashop.com/products/uspa-womens-tere-flag-sweater-white?variant=52139674108220" target="_blank" class="title">Без названия</a>
                 
+                <div class="price-box">
+                    <span class="current-price">$55.25 USD</span>
+                    <span class="old-price">$85.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Tere-Flag Sweater White</div>
             </div>
         </div>
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c75672d5-a1f2-485b-83af-6d6c837a5481/JORDAN+LUKA+77.png" alt="Luka 77" loading="lazy">
+                <img src="images/prod_10.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/luka-77-basketball-shoes-RNbRTVc7/IF1610-102" target="_blank" class="title">Luka 77</a>
-                <div class="subtitle">Basketball Shoes</div>
-                <div class="price-box">
-                    <span class="current-price">$89.97</span>
-                    <span class="old-price">$105</span>
-                </div>
+                <a href="https://www.uspashop.com/products/uspa-womens-gingham-classic-fit-shirt-crystal-rose?variant=52323045671228" target="_blank" class="title">Без названия</a>
                 
+                <div class="price-box">
+                    <span class="current-price">$33.75 USD</span>
+                    <span class="old-price">$45.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Gingham Classic Fit Shirt Crystal Rose</div>
             </div>
         </div>
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cb37f09b-8043-4c45-8a0b-0187b9473928/AIR+JORDAN+40+SL.png" alt="Air Jordan 40" loading="lazy">
+                <img src="images/prod_11.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/air-jordan-40-basketball-shoes-AEDokexu/IM8206-800" target="_blank" class="title">Air Jordan 40</a>
-                <div class="subtitle">Basketball Shoes</div>
-                <div class="price-box">
-                    <span class="current-price">$174.97</span>
-                    <span class="old-price">$205</span>
-                </div>
+                <a href="https://www.uspashop.com/products/uspa-womens-gingham-classic-fit-shirt-windsurfer?variant=52323047833916" target="_blank" class="title">Без названия</a>
                 
+                <div class="price-box">
+                    <span class="current-price">$33.75 USD</span>
+                    <span class="old-price">$45.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Gingham Classic Fit Shirt Windsurfer</div>
             </div>
         </div>
         <div class="card">
-            
+            <div class="badge">Sale</div>
             <div class="image-container">
-                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/94dde898-fe71-4ae9-8cfc-794f2a21b9cd/AIR+JORDAN+40+ASW.png" alt="Air Jordan 40 "Infrared"" loading="lazy">
+                <img src="images/prod_12.jpg" alt="Без названия" loading="lazy">
             </div>
             <div class="info">
-                <a href="https://www.nike.com/t/air-jordan-40-infrared-basketball-shoes-AEDokexu/IQ4092-001" target="_blank" class="title">Air Jordan 40 "Infrared"</a>
-                <div class="subtitle">Basketball Shoes</div>
-                <div class="price-box">
-                    <span class="current-price">$174.97</span>
-                    <span class="old-price">$205</span>
-                </div>
+                <a href="https://www.uspashop.com/products/uspa-womens-pola-cable-knit-gg-white?variant=52139662115132" target="_blank" class="title">Без названия</a>
                 
+                <div class="price-box">
+                    <span class="current-price">$48.75 USD</span>
+                    <span class="old-price">$75.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Pola-Cable Knit GG White</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="badge">Sale</div>
+            <div class="image-container">
+                <img src="images/prod_13.jpg" alt="Без названия" loading="lazy">
+            </div>
+            <div class="info">
+                <a href="https://www.uspashop.com/products/uspa-womens-wreath-graphic-tipped-lb-rugby-sweat-navy-iris?variant=52323051667772" target="_blank" class="title">Без названия</a>
+                
+                <div class="price-box">
+                    <span class="current-price">$48.75 USD</span>
+                    <span class="old-price">$65.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Wreath Graphic Tipped LB Rugby Sweat Navy Iris</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="badge">Sale</div>
+            <div class="image-container">
+                <img src="images/prod_14.jpg" alt="Без названия" loading="lazy">
+            </div>
+            <div class="info">
+                <a href="https://www.uspashop.com/products/uspa-womens-arc-graphic-lb-crew-sweat-ballad-blue?variant=52323051503932" target="_blank" class="title">Без названия</a>
+                
+                <div class="price-box">
+                    <span class="current-price">$48.75 USD</span>
+                    <span class="old-price">$65.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Arc Graphic LB Crew Sweat Ballad Blue</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="badge">Sale</div>
+            <div class="image-container">
+                <img src="images/prod_15.jpg" alt="Без названия" loading="lazy">
+            </div>
+            <div class="info">
+                <a href="https://www.uspashop.com/products/uspa-womens-cafra-shirt-pink?variant=52159186338108" target="_blank" class="title">Без названия</a>
+                
+                <div class="price-box">
+                    <span class="current-price">$33.75 USD</span>
+                    <span class="old-price">$45.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Women's Cafra Shirt Pink</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="badge">Sale</div>
+            <div class="image-container">
+                <img src="images/prod_16.jpg" alt="Без названия" loading="lazy">
+            </div>
+            <div class="info">
+                <a href="https://www.uspashop.com/products/uspa-jones-chic-backpack-blue?variant=52322933080380" target="_blank" class="title">Без названия</a>
+                
+                <div class="price-box">
+                    <span class="current-price">$42.25 USD</span>
+                    <span class="old-price">$65.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> USPA Jones Chic Backpack Blue</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="badge">Sale</div>
+            <div class="image-container">
+                <img src="images/prod_17.jpg" alt="Без названия" loading="lazy">
+            </div>
+            <div class="info">
+                <a href="https://www.uspashop.com/products/the-polo-club-x-stubbs-wootton-womens-linen-in-natural?variant=48471410082108" target="_blank" class="title">Без названия</a>
+                
+                <div class="price-box">
+                    <span class="current-price">$402.50 USD</span>
+                    <span class="old-price">$575.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> The Polo Club X Stubbs & Wootton Women's Linen in Natural</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="badge">Sale</div>
+            <div class="image-container">
+                <img src="images/prod_18.jpg" alt="Без названия" loading="lazy">
+            </div>
+            <div class="info">
+                <a href="https://www.uspashop.com/products/the-polo-club-womens-quarter-zip-pullover-grey?variant=49941411791164" target="_blank" class="title">Без названия</a>
+                
+                <div class="price-box">
+                    <span class="current-price">$77.00 USD</span>
+                    <span class="old-price">$110.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> The Polo Club Women's Quarter Zip Pullover Grey</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="badge">Sale</div>
+            <div class="image-container">
+                <img src="images/prod_19.jpg" alt="Без названия" loading="lazy">
+            </div>
+            <div class="info">
+                <a href="https://www.uspashop.com/products/the-polo-club-womens-quarter-zip-pullover-orchid?variant=47998481236284" target="_blank" class="title">Без названия</a>
+                
+                <div class="price-box">
+                    <span class="current-price">$77.00 USD</span>
+                    <span class="old-price">$110.00 USD</span>
+                </div>
+                <div class="meta-line"><strong>Full unstyled link:</strong> The Polo Club Women's Quarter Zip Pullover Orchid</div>
             </div>
         </div>
     </div>
